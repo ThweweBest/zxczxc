@@ -1,0 +1,217 @@
+/* Медиазапрос для экранов с максимальной шириной 768px */
+@media only screen and (max-width: 768px) {
+    /* Адаптация фона для контейнера .main */
+    .main {
+        padding: 10px; /* Уменьшаем отступы внутри контейнера */
+        border: none; /* Убираем границу */
+        box-shadow: none; /* Убираем тень */
+    }
+
+    /* Адаптация размеров заголовков h1 и h2 */
+    h1 {
+        font-size: 50px; /* Уменьшаем размер шрифта заголовка */
+    }
+
+    h2 {
+        font-size: 30px; /* Уменьшаем размер шрифта заголовка второго уровня */
+    }
+
+    /* Адаптация элементов списка */
+    ul {
+        flex-direction: column; /* Меняем направление на вертикальное */
+        align-items: center; /* Центрируем элементы по горизонтали */
+    }
+
+    li {
+        margin: 10px 0; /* Уменьшаем отступы между элементами списка */
+        font-size: 18px; /* Уменьшаем размер шрифта элементов списка */
+    }
+
+    /* Адаптация контейнеров con-1, con-2, con-3 */
+    .containers {
+        flex-direction: column; /* Меняем направление на вертикальное */
+        align-items: center; /* Центрируем элементы по горизонтали */
+    }
+
+    .con-1, .con-2, .con-3 {
+        width: 100%; /* Устанавливаем ширину контейнеров на 100% */
+        height: auto; /* Устанавливаем высоту контейнеров в зависимости от содержимого */
+        border-radius: 20px; /* Уменьшаем скругление углов */
+    }
+
+    img {
+        width: 100%; /* Устанавливаем ширину изображения на 100% */
+        height: auto; /* Устанавливаем высоту изображения автоматически */
+        margin-left: 0; /* Убираем отступы слева */
+        margin-top: 20px; /* Уменьшаем отступы сверху */
+    }
+
+    button {
+        width: 100%; /* Устанавливаем ширину кнопки на 100% */
+        height: 50px; /* Уменьшаем высоту кнопки */
+        margin-left: 0; /* Убираем отступы слева */
+    }
+}
+
+
+
+
+
+
+
+body {
+    background-image: url('image.png');
+    background-size: cover; /* Масштабирование изображения для полного покрытия */
+    background-position: center; /* Центрирование изображения */
+   
+}
+h1{
+    color: gray;
+    text-align: center;
+    font-size: 80px;
+    text-shadow:
+    1px 1px 0 #000, /* Первый слой тени */
+    -1px -1px 0 #000, /* Второй слой тени */
+    1px -1px 0 #000, /* Третий слой тени */
+    -1px 1px 0 #000; /* Четвертый слой тени */
+}
+h1>a{
+    text-decoration: none;
+    color: gray;
+}
+/* Стилизация контейнера .main */
+.main {
+    display: flex; /* Включаем Flexbox */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    align-items: center; /* Центрируем элементы по вертикали (если контейнер имеет высоту) */
+    padding: 20px; /* Отступы внутри контейнера */
+    background-color: #f4f4f4; /* Цвет фона для контейнера */
+    border-radius: 10px; /* Скругление углов контейнера */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
+    border: 1px solid black;
+}
+
+/* Стилизация списка ul */
+ul {
+    display: flex; /* Включаем Flexbox для списка */
+    padding: 0; /* Убираем отступы у списка */
+    margin: 0; /* Убираем маргины у списка */
+    list-style: none; /* Убираем маркеры у списка */
+}
+
+/* Стилизация элементов списка li */
+li {
+    margin: 0 30px; /* Увеличиваем отступы между элементами списка */
+    font-size: 20px; /* Размер шрифта */
+    color: #333; /* Цвет текста */
+    font-weight: bold; /* Жирный текст */
+    transition: color 0.3s, transform 0.3s; /* Плавный переход для цвета и трансформации */
+    cursor: pointer; /* Курсор в виде указателя при наведении */
+}
+li>a{
+    color: #000;
+    text-decoration: none;
+}
+
+li:hover {
+    color: #007bff; /* Цвет текста при наведении */
+    transform: scale(1.1); /* Увеличение элемента при наведении */
+}
+li:hover a{
+    color: #007bff; /* Цвет текста при наведении */
+}
+h2{
+    color: gray;
+    text-align: center;
+    font-size: 40px;
+    text-shadow:
+    1px 1px 0 #000, /* Первый слой тени */
+    -1px -1px 0 #000, /* Второй слой тени */
+    1px -1px 0 #000, /* Третий слой тени */
+    -1px 1px 0 #000; /* Четвертый слой тени */
+}
+.containers{
+    display: flex;
+justify-content: space-around;
+}
+.con-1{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 500px;
+background-color: gray;
+border-radius: 100px ;
+}
+img{
+    width: 160px;
+    height: 200px;
+ margin-left: 68px;
+ margin-top: 40px;
+}
+p{
+    text-align: center;
+
+}
+button{
+    background-color: yellowgreen;
+    border: 0px;
+    align-items: center;
+    height: 70px;
+    width: 160px;
+    margin-left: 67px;
+    border-radius: 40px;
+}
+.con-2{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 500px;
+background-color: gray;
+border-radius: 100px ;
+}
+img{
+    width: 160px;
+    height: 200px;
+ margin-left: 68px;
+ margin-top: 40px;
+}
+p{
+    text-align: center;
+
+}
+button{
+    background-color: yellowgreen;
+    border: 0px;
+    align-items: center;
+    height: 70px;
+    width: 160px;
+    margin-left: 67px;
+    border-radius: 40px;
+}
+.con-3{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 500px;
+background-color: gray;
+border-radius: 100px ;
+}
+img{
+    width: 160px;
+    height: 200px;
+ margin-left: 68px;
+ margin-top: 40px;
+}
+p{
+    text-align: center;
+
+}
+button{
+    background-color: yellowgreen;
+    border: 0px;
+    align-items: center;
+    height: 70px;
+    width: 160px;
+    margin-left: 67px;
+    border-radius: 40px;
+}
